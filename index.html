@@ -824,16 +824,19 @@
   function kc(el,correct){
     const slide=el.closest('.slide');
     const sc=el.closest('.sc');
-    sc.querySelectorAll('.kc-opt').forEach(o=>o.style.pointerEvents='none');
     if(correct){
+      // Lock all options and unlock next
+      sc.querySelectorAll('.kc-opt').forEach(o=>o.style.pointerEvents='none');
       el.classList.add('correct');
       slide.dataset.answered='true';
       upd();
+      const ans=sc.querySelector('.kc-ans');
+      if(ans) ans.classList.add('show');
     } else {
+      // Only disable the wrong option clicked — let them keep trying
+      el.style.pointerEvents='none';
       el.classList.add('incorrect');
     }
-    const ans=sc.querySelector('.kc-ans');
-    if(ans && correct) ans.classList.add('show');
   }
 
   upd();
