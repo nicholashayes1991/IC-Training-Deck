@@ -60,7 +60,7 @@
     .kc-opt.correct{background:rgba(52,199,89,0.2);border-color:#34c759;color:#34c759;}
     .kc-opt.incorrect{background:rgba(255,59,48,0.15);border-color:#ff3b30;color:rgba(255,255,255,0.45);text-decoration:line-through;}
     .kc-letter{width:26px;height:26px;border-radius:7px;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82rem;flex-shrink:0;}
-    .kc-ans{margin-top:14px;padding:13px 18px;border-radius:11px;background:rgba(52,199,89,0.15);border:1px solid rgba(52,199,89,0.3);font-size:0.87rem;color:#34c759;display:none;}
+    .kc-ans{margin-top:14px;padding:13px 18px;border-radius:11px;background:rgba(52,199,89,0.15);border:1px solid rgba(52,199,89,0.3);font-size:0.87rem;color:#34c759;display:block;}
     .kc-ans.show{display:block;}
     .tl{display:flex;align-items:flex-start;gap:0;width:100%;padding:16px 0;}
     .tl-node{flex:1;text-align:center;position:relative;}
@@ -212,7 +212,7 @@
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>Safety glasses only</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">B</div>Safety glasses and ESD wrist straps only</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">C</div>Steel-toed shoes, ESD wrist straps, and ground straps</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">C</div>Steel-toed shoes, ESD wrist straps, and ground straps</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>PPE is optional during Burn-In</div>
     </div>
     <div class="kc-ans">✅ <strong>Correct: C</strong> — ESD protocols protect high-value server components from static damage. All three are required simultaneously.</div>
@@ -371,7 +371,7 @@
     <div class="kc-q">What is the <strong>correct sequence</strong> for Cabinet Unit Tasks?</div>
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>Power → Rack & Stack → Build Prep → Cat6</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">B</div>Build Prep → Rack & Stack → Power → Cat6 → DAC</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">B</div>Build Prep → Rack & Stack → Power → Cat6 → DAC</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">C</div>Rack & Stack → Build Prep → Power → Cat6</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>Any order is acceptable</div>
     </div>
@@ -465,7 +465,7 @@
     <div class="kc-q">You're on your <strong>3rd solo cabinet</strong> and encounter an unexpected cable length issue. What do you do?</div>
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>Continue with the short cable and note it later</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">B</div>Stop work and immediately notify the FTE Lead</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">B</div>Stop work and immediately notify the FTE Lead</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">C</div>Use a different cable type as a substitute</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>Skip that connection and come back to it later</div>
     </div>
@@ -566,7 +566,7 @@
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>1 inch</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">B</div>2 inches</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">C</div>3 inches</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">C</div>3 inches</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>No minimum requirement</div>
     </div>
     <div class="kc-ans">✅ <strong>Correct: C</strong> — DAC cables require a minimum 3-inch bend radius. Tighter bends can damage copper conductors and cause signal loss or outright cable failure.</div>
@@ -636,7 +636,7 @@
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>Basic understanding of the process</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">B</div>Still requires constant supervision</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">C</div>Full comprehension of IC functions with minimal questions</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">C</div>Full comprehension of IC functions with minimal questions</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>Ability to work without any documentation</div>
     </div>
     <div class="kc-ans">✅ <strong>Correct: C</strong> — Full comprehension with minimal questions is the expectation by the 5th build. Documentation should still always be followed regardless.</div>
@@ -702,7 +702,7 @@
     <div class="kc-q">You've completed Week 2 and your <strong>4th cabinet took 5 hours</strong>. What's the right next step?</div>
     <div class="kc-opts">
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">A</div>Move straight to the 5th cabinet immediately</div>
-      <div class="kc-opt" onclick="kc(this,true)"><div class="kc-letter">B</div>Schedule additional practice time with a Veteran Technician</div>
+      <div class="kc-opt correct" onclick="kc(this,true)"><div class="kc-letter">B</div>Schedule additional practice time with a Veteran Technician</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">C</div>Request an easier assignment</div>
       <div class="kc-opt" onclick="kc(this,false)"><div class="kc-letter">D</div>Focus only on speed for the next build</div>
     </div>
